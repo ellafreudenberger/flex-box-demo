@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+* {
+    outline: 1px solid olivedrab;
+    color: black;
+    text-align: center;
+}
+
+.container {
+    background: lightblue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; }
+
+ main {
+    flex-grow: 2;
+    min-height: 50vh;
+    width: 100%; 
+    flex-direction: row;
+}
+    
+
+ header, footer {
+    flex-grow: 1;
+    max-height: 15vh; }
+
+    @media (min-width: 600px) {
+        * {
+            color: black;
+        }
+        .container {
+            background: white;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    
+        header {
+            width: 100%;
+            min-height: 15vh;
+        }
+
+        main {
+            flex-grow: 2;
+            width: 500px;
+        }
+
+        footer {
+            min-height: 300vh;
+            flex-direction: column;
+            width: 100px;
+        }
+    }
